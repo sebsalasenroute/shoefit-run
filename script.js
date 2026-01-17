@@ -42,14 +42,25 @@ const questions = [
         ]
     },
     {
+        id: 'gender',
+        label: 'Required',
+        title: 'Which shoes would you like to see?',
+        required: true,
+        options: [
+            { value: 'mens', text: "Men's shoes", subtext: '' },
+            { value: 'womens', text: "Women's shoes", subtext: '' },
+            { value: 'all', text: 'Show me all options', subtext: 'Both men\'s and women\'s' }
+        ]
+    },
+    {
         id: 'budget',
         label: 'Required',
-        title: 'What\'s your budget?',
+        title: 'What\'s your budget? (CAD)',
         required: true,
         options: [
             { value: 'budget', text: 'Under $150', subtext: 'Value-focused options' },
-            { value: 'mid', text: '$150-200', subtext: 'Mid-range performance' },
-            { value: 'premium', text: 'Over $200', subtext: 'Premium performance' }
+            { value: 'mid', text: '$150-250', subtext: 'Mid-range performance' },
+            { value: 'premium', text: 'Over $250', subtext: 'Premium performance' }
         ]
     },
     {

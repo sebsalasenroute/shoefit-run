@@ -710,6 +710,12 @@ body {
 }
 
 /* Buy Button */
+.button-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
 .buy-button {
     display: inline-flex;
     align-items: center;
@@ -730,6 +736,28 @@ body {
 .buy-button:hover {
     background: var(--accent-blue-hover);
     transform: translateY(-2px);
+}
+
+.fitting-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border-light);
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-decoration: none;
+}
+
+.fitting-button:hover {
+    background: var(--bg-tertiary);
+    border-color: var(--accent-blue);
 }
 
 /* Compare Section */
