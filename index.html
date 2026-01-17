@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeFit.run - Find Your Perfect Running Shoe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Section -->
+    <section id="landing" class="landing">
+        <nav class="nav">
+            <div class="logo">
+                <span class="logo-icon">👟</span>
+                <span class="logo-text">ShoeFit<span class="logo-dot">.run</span></span>
+            </div>
+        </nav>
+        
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Find your <span class="italic">perfect</span><br>
+                    running shoe
+                </h1>
+                <p class="hero-subtitle">
+                    Answer a few quick questions and get personalized recommendations 
+                    from our database of 50+ top-rated running shoes.
+                </p>
+                <button class="cta-button" onclick="startQuiz()">
+                    Get Started
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+                <p class="cta-note">Free • 2 minutes • No signup required</p>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="shoe-card shoe-card-1">
+                    <div class="shoe-placeholder">🏃</div>
+                    <span>Road Racing</span>
+                </div>
+                <div class="shoe-card shoe-card-2">
+                    <div class="shoe-placeholder">⛰️</div>
+                    <span>Trail Running</span>
+                </div>
+                <div class="shoe-card shoe-card-3">
+                    <div class="shoe-placeholder">🎯</div>
+                    <span>Daily Training</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <h3>Smart Matching</h3>
+                <p>Our algorithm considers your weight, surface, distance, and more</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <h3>Quick Results</h3>
+                <p>Get your top 3 recommendations in under 2 minutes</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔄</div>
+                <h3>Compare Shoes</h3>
+                <p>Side-by-side comparisons to find your perfect match</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questionnaire Section -->
+    <section id="questionnaire" class="questionnaire hidden">
+        <nav class="nav">
+            <div class="logo">
+                <span class="logo-icon">👟</span>
+                <span class="logo-text">ShoeFit<span class="logo-dot">.run</span></span>
+            </div>
+            <button class="back-button" onclick="goBack()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back
+            </button>
+        </nav>
+
+        <div class="quiz-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <p class="progress-text" id="progressText">Question 1 of 8</p>
+
+            <div class="question-container" id="questionContainer">
+                <!-- Questions will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
