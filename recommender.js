@@ -468,58 +468,6 @@ const shoeDatabase = [
         amazonId: "B0CX27XXXX",
         description: "Versatile tempo trainer with Energyrods."
     },
-    // BUDGET OPTIONS
-    {
-        id: 28,
-        brand: "ASICS",
-        name: "Gel-Contend 8",
-        category: "daily-trainer",
-        surface: ["road"],
-        price: 75,
-        weight: 275,
-        drop: 10,
-        cushion: "moderate",
-        support: "neutral",
-        bestFor: ["5k", "10k", "fitness"],
-        weightRange: ["light-medium", "medium", "medium-heavy"],
-        tags: ["budget", "beginner", "reliable"],
-        amazonId: "B0CX28XXXX",
-        description: "Solid budget option for new runners."
-    },
-    {
-        id: 29,
-        brand: "Nike",
-        name: "Revolution 7",
-        category: "daily-trainer",
-        surface: ["road"],
-        price: 75,
-        weight: 254,
-        drop: 10,
-        cushion: "moderate",
-        support: "neutral",
-        bestFor: ["5k", "fitness"],
-        weightRange: ["light", "light-medium", "medium"],
-        tags: ["budget", "lightweight", "beginner"],
-        amazonId: "B0CX29XXXX",
-        description: "Affordable Nike option for casual runners."
-    },
-    {
-        id: 30,
-        brand: "Saucony",
-        name: "Cohesion 17",
-        category: "daily-trainer",
-        surface: ["road"],
-        price: 70,
-        weight: 275,
-        drop: 8,
-        cushion: "moderate",
-        support: "neutral",
-        bestFor: ["5k", "fitness"],
-        weightRange: ["light-medium", "medium"],
-        tags: ["budget", "cushioned", "beginner"],
-        amazonId: "B0CX30XXXX",
-        description: "Budget-friendly daily trainer."
-    },
     // ULTRA/LONG DISTANCE
     {
         id: 31,
